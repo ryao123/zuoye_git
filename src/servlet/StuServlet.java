@@ -30,8 +30,8 @@ public class StuServlet extends HttpServlet {
 		StuService ss=new StuService();
 		
 		 
-		List<student> stu =ss.getShow();
-		req.setAttribute("stu", stu);
+		List<student> stude =ss.getShow();
+		req.setAttribute("stu", stude);
 		
 		//ÍøÒ³Ìø×ª
 		req.getRequestDispatcher("index.jsp").forward(req, resp);
